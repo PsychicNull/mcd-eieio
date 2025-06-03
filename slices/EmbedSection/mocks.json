@@ -1,0 +1,56 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Green",
+				"type": "Select"
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Fugiat aute labore deserunt quis cillum aute sit est proident. Dolore in nulla ex adipisicing non fugiat qui et ipsum cillum labore. Minim aliqua velit laboris aute deserunt incididunt commodo consequat pariatur mollit id nisi."
+						}
+					}
+				]
+			},
+			"embed": {
+				"embed_url": "https://www.youtube.com/watch?v=6_ksC95mr9w",
+				"__TYPE__": "EmbedContent",
+				"type": "video",
+				"version": "1.0",
+				"title": "How to use Prismic with Next.js 13 App Router",
+				"author_name": "Prismic",
+				"author_url": "https://www.youtube.com/@Prismic",
+				"provider_name": "YouTube",
+				"provider_url": "https://www.youtube.com/",
+				"thumbnail_url": "https://i.ytimg.com/vi/6_ksC95mr9w/hqdefault.jpg",
+				"thumbnail_width": 480,
+				"thumbnail_height": 360,
+				"html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/6_ksC95mr9w?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"How to use Prismic with Next.js 13 App Router\"></iframe>",
+				"all": {
+					"embed_url": "https://www.youtube.com/watch?v=6_ksC95mr9w",
+					"type": "video",
+					"version": "1.0",
+					"title": "How to use Prismic with Next.js 13 App Router",
+					"author_name": "Prismic",
+					"author_url": "https://www.youtube.com/@Prismic",
+					"provider_name": "YouTube",
+					"provider_url": "https://www.youtube.com/",
+					"thumbnail_url": "https://i.ytimg.com/vi/6_ksC95mr9w/hqdefault.jpg",
+					"thumbnail_width": 480,
+					"thumbnail_height": 360,
+					"html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/6_ksC95mr9w?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"How to use Prismic with Next.js 13 App Router\"></iframe>",
+					"height": 113,
+					"width": 200
+				}
+			}
+		},
+		"items": []
+	}
+]

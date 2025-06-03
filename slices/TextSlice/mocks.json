@@ -1,0 +1,99 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"text_field": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur nunc ut est sodales consectetur sit amet a risus. Duis ut lacinia diam. Nullam fringilla, orci sit amet rutrum vehicula, nisl risus ultricies mi, sit amet consectetur ligula arcu a ligula. Donec at tortor vel justo cursus dapibus eget ut ipsum. Curabitur eu molestie mauris, sed tristique lorem. Sed ut odio non metus iaculis euismod. Aenean diam velit, pharetra a diam sit amet, sagittis ultricies justo.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Donec mi nulla, dignissim a tincidunt in, feugiat quis est. Aliquam congue efficitur tellus, vulputate maximus metus eleifend in. Aliquam porta nulla nunc, imperdiet.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"text_align": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "text-left"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Grey",
+				"type": "Select"
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "callToActionButton",
+		"primary": {
+			"text_field": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "CALL TO ACTION",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 14
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Minim laboris tempor ad ut labore Lorem elit enim. Laborum sit eiusmod mollit excepteur ullamco ea sunt irure.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"button_link": {
+				"key": "79534415-882c-4575-b27c-344f88867744",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://en.wikipedia.org/wiki/Hydration_(web_development)",
+					"target": "_blank",
+					"text": "so"
+				}
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Click Me"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "Grey",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]
