@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 
 export const components = {
   embed_section: dynamic(() => import("./EmbedSection")),
+  image_carousel: dynamic(() => import("./ImageCarousel")),
   split_image_text: dynamic(() => import("./SplitImageText")),
   text_slice: dynamic(() => import("./TextSlice")),
 };

@@ -144,6 +144,7 @@ export type HomepageDocument<Lang extends string = string> =
   >;
 
 type MarketingPageDocumentDataSlicesSlice =
+  | ImageCarouselSlice
   | SplitImageTextSlice
   | EmbedSectionSlice
   | TextSliceSlice;
@@ -279,6 +280,78 @@ type EmbedSectionSliceVariation = EmbedSectionSliceDefault;
 export type EmbedSectionSlice = prismic.SharedSlice<
   "embed_section",
   EmbedSectionSliceVariation
+>;
+
+/**
+ * Item in *ImageCarousel → Default → Primary → Carousel Images*
+ */
+export interface ImageCarouselSliceDefaultPrimaryCarouselImagesItem {
+  /**
+   * Carousel Image field in *ImageCarousel → Default → Primary → Carousel Images*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image_carousel.default.primary.carousel_images[].carousel_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  carousel_image: prismic.ImageField<never>;
+
+  /**
+   * Image Caption field in *ImageCarousel → Default → Primary → Carousel Images*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image_carousel.default.primary.carousel_images[].image_caption
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  image_caption: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *ImageCarousel → Default → Primary*
+ */
+export interface ImageCarouselSliceDefaultPrimary {
+  /**
+   * Carousel Images field in *ImageCarousel → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: image_carousel.default.primary.carousel_images[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  carousel_images: prismic.GroupField<
+    Simplify<ImageCarouselSliceDefaultPrimaryCarouselImagesItem>
+  >;
+}
+
+/**
+ * Default variation for ImageCarousel Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ImageCarouselSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ImageCarouselSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *ImageCarousel*
+ */
+type ImageCarouselSliceVariation = ImageCarouselSliceDefault;
+
+/**
+ * ImageCarousel Shared Slice
+ *
+ * - **API ID**: `image_carousel`
+ * - **Description**: ImageCarousel
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ImageCarouselSlice = prismic.SharedSlice<
+  "image_carousel",
+  ImageCarouselSliceVariation
 >;
 
 /**
@@ -797,6 +870,11 @@ declare module "@prismicio/client" {
       EmbedSectionSliceDefaultPrimary,
       EmbedSectionSliceVariation,
       EmbedSectionSliceDefault,
+      ImageCarouselSlice,
+      ImageCarouselSliceDefaultPrimaryCarouselImagesItem,
+      ImageCarouselSliceDefaultPrimary,
+      ImageCarouselSliceVariation,
+      ImageCarouselSliceDefault,
       SplitImageTextSlice,
       SplitImageTextSliceDefaultPrimary,
       SplitImageTextSliceSplitImageRightPrimary,

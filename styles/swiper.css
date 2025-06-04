@@ -1,0 +1,16 @@
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+}
+
+.swiper-button-prev {
+    left: 1.5rem; /* adjust as needed */
+}
+
+.swiper-button-next {
+    right: 1.5rem; /* adjust as needed */
+}
